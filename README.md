@@ -29,6 +29,7 @@ import { CapacitorSecurityProvider } from 'capacitor-plugin-security-provider';
 <docgen-index>
 
 * [`installIfNeeded()`](#installifneeded)
+* [Enums](#enums)
 
 </docgen-index>
 
@@ -38,11 +39,24 @@ import { CapacitorSecurityProvider } from 'capacitor-plugin-security-provider';
 ### installIfNeeded()
 
 ```typescript
-installIfNeeded() => Promise<{ status: string; }>
+installIfNeeded() => Promise<{ status: SecurityProviderStatus; }>
 ```
 
-**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ status: <a href="#securityproviderstatus">SecurityProviderStatus</a>; }&gt;</code>
 
 --------------------
+
+
+### Enums
+
+
+#### SecurityProviderStatus
+
+| Members                                       | Value                                                  | Description                                                                                                                                       |
+| --------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`Success`**                                 | <code>'Success'</code>                                 | This indicates that the provider was already up to date or was successfully updated                                                               |
+| **`NotImplemented`**                          | <code>'NotImplemented'</code>                          | This will occur on iOS and Web as these platforms cannot call the Android Security Provider                                                       |
+| **`GooglePlayServicesRepairableException`**   | <code>'GooglePlayServicesRepairableException'</code>   | Indicates that Google Play services is out of date, disabled, etc. If this is returned a native dialog will notify and prompt the user to update. |
+| **`GooglePlayServicesNotAvailableException`** | <code>'GooglePlayServicesNotAvailableException'</code> | Indicates a non-recoverable error; the ProviderInstaller can't install an up-to-date Provider. You should abort running the application.          |
 
 </docgen-api>

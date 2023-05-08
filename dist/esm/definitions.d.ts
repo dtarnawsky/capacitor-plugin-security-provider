@@ -1,6 +1,6 @@
 export interface CapacitorSecurityProviderPlugin {
     installIfNeeded(): Promise<{
-        status: string;
+        status: SecurityProviderStatus;
     }>;
 }
 export declare enum SecurityProviderStatus {
