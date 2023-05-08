@@ -11,10 +11,10 @@ public class CapacitorSecurityProviderPlugin extends Plugin {
 
     private CapacitorSecurityProvider implementation;
 
-  @Override
-  public void load() {
-    implementation = new CapacitorSecurityProvider(getContext());
-  }
+    @Override
+    public void load() {
+        implementation = new CapacitorSecurityProvider(getContext());
+    }
 
     @PluginMethod
     public void installIfNeeded(PluginCall call) {

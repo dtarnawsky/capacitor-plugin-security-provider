@@ -1,15 +1,16 @@
 package community.capacitor.android.security.provider;
 
+import android.content.Context;
 import android.util.Log;
-
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.security.ProviderInstaller;
-import android.content.Context;
 
 public class CapacitorSecurityProvider {
+
     private Context context;
+
     public CapacitorSecurityProvider(Context context) {
         this.context = context;
     }
