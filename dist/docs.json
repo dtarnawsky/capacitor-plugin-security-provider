@@ -1,0 +1,25 @@
+{
+  "api": {
+    "name": "CapacitorSecurityProviderPlugin",
+    "slug": "capacitorsecurityproviderplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "installIfNeeded",
+        "signature": "() => Promise<{ status: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ status: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "installifneeded"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
