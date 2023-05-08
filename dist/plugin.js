@@ -1,4 +1,4 @@
-var capacitorCapacitorSecurityProvider = (function (exports, core) {
+var capacitorSecurityProvider = (function (exports, core) {
     'use strict';
 
     exports.SecurityProviderStatus = void 0;

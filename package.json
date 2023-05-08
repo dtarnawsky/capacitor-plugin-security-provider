@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-security-provider",
-  "version": "0.0.1",
+  "version": "5.0.0",
   "description": "Capacitor plugin with methods to check and update the Android Security Provider",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -25,7 +25,8 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "security provider"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",

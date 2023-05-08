@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorCapacitorSecurityProvider',
+      name: 'capacitorSecurityProvider',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },
