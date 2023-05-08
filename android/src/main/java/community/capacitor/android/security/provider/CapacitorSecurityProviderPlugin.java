@@ -9,7 +9,12 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 @CapacitorPlugin(name = "CapacitorSecurityProvider")
 public class CapacitorSecurityProviderPlugin extends Plugin {
 
-    private CapacitorSecurityProvider implementation = new CapacitorSecurityProvider(getContext());
+    private CapacitorSecurityProvider implementation;
+
+  @Override
+  public void load() {
+    implementation = new CapacitorSecurityProvider(getContext());
+  }
 
     @PluginMethod
     public void installIfNeeded(PluginCall call) {
